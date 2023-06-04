@@ -106,6 +106,8 @@ split_idx = int(len(data) * 0.9)
 train_data = data[:split_idx]
 test_data = data[split_idx:]
 
+save_model(model, cfg, './models/model_1l_v2_start.pkl')
+
 for epoch in range(15):
     print('-' * 20)
     print('Epoch', epoch)
